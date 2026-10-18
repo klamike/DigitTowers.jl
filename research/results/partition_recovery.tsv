@@ -1,0 +1,6 @@
+family	ndigits	base	complete	status	candidates	solutions	seconds
+strict	94	2	true	INFEASIBLE	1	0	2.475268
+strict	94	3	true	INFEASIBLE	1	0	1.028375
+strict	94	4	true	INFEASIBLE	1	0	0.707669
+strict	94	8	true	INFEASIBLE	1	0	0.567425
+strict	94	9	true	INFEASIBLE	1	0	0.585356

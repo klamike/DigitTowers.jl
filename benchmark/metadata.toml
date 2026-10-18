@@ -1,0 +1,15 @@
+benchmarktools_version = "1.8.0"
+cpu = "apple-m4"
+digit_towers_version = "0.1.0"
+first_call = "Includes compilation/setup for this case/method; not a clean-process cold-start measurement"
+julia_version = "1.12.3"
+maximum_samples = 5
+nemo_version = "0.57.1"
+process_import_seconds = 2.666186958
+range_cp_maximum_samples = 2
+range_cp_target_seconds = 8
+target_seconds_per_trial = 1
+threads = 1
+time_utc = "2026-10-18T13:10:20.101"
+timing = "Warmed end-to-end search, newly constructed model per CP evaluation"
+word_size = 64

@@ -1,0 +1,6 @@
+cpu = "apple-m4"
+julia_version = "1.12.3"
+samples = 3
+threads = 1
+time_utc = "2026-10-18T12:58:45.717"
+warmup = "one complete verified invocation per measured method"

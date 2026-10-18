@@ -1,0 +1,25 @@
+case	method	status	complete	candidates	solutions	samples	first_call_seconds	minimum_seconds	median_seconds	allocated_bytes	allocations	notes
+original_6	direct	OPTIMAL	true	1	1	5	0.000197834	2.5833e-5	2.7583e-5	34536	1321	verified_equal_answers
+original_6	prefix	OPTIMAL	true	1	1	5	0.057656	8.125e-6	9.459e-6	12536	412	verified_equal_answers
+original_6	nemo	OPTIMAL	true	1	1	5	0.057039542	6.583e-6	7.334e-6	11424	381	verified_equal_answers
+original_6	cp	INFEASIBLE	true	1	1	5	0.936329084	0.007658209	0.00813625	443368	9150	verified_equal_answers
+strict_30	direct	OPTIMAL	true	1	0	5	0.000306875	0.000100459	0.000105	126832	5475	verified_equal_answers
+strict_30	prefix	OPTIMAL	true	1	0	5	0.000126542	1.1167e-5	1.1791e-5	14864	500	verified_equal_answers
+strict_30	nemo	OPTIMAL	true	1	0	5	0.000401792	1.025e-5	1.1417e-5	13824	466	verified_equal_answers
+strict_30	cp	INFEASIBLE	true	1	0	5	0.089409167	0.085184541	0.091222791	2998064	23362	verified_equal_answers
+grouped_60	direct	OPTIMAL	true	1	1	5	0.000103792	2.6583e-5	2.7041e-5	37528	1146	verified_equal_answers
+grouped_60	prefix	OPTIMAL	true	1	1	5	8.1583e-5	2.2166e-5	2.2291e-5	32248	912	verified_equal_answers
+grouped_60	nemo	OPTIMAL	true	1	1	5	4.7417e-5	2.0917e-5	2.1167e-5	32000	904	verified_equal_answers
+grouped_60	cp	INFEASIBLE	true	1	1	5	0.176675041	0.149718917	0.151667	4519144	28110	verified_equal_answers
+grouped_35	direct	OPTIMAL	true	1	1	5	7.1167e-5	1.425e-5	1.6125e-5	19512	633	verified_equal_answers
+grouped_35	prefix	OPTIMAL	true	1	1	5	6.0125e-5	1.2166e-5	1.2416e-5	18168	555	verified_equal_answers
+grouped_35	nemo	OPTIMAL	true	1	1	5	3.4041e-5	1.125e-5	1.3125e-5	17936	547	verified_equal_answers
+grouped_35	cp	INFEASIBLE	true	1	1	5	0.10966125	0.095385583	0.098698916	2655224	18546	verified_equal_answers
+strict_500	direct	OPTIMAL	true	3	0	5	0.003160542	0.002628375	0.002713459	4827408	88307	verified_equal_answers
+strict_500	prefix	OPTIMAL	true	3	0	5	0.000206833	0.000129625	0.000132	207232	6854	verified_equal_answers
+strict_500	nemo	OPTIMAL	true	3	0	5	0.000429416	0.000314209	0.000320084	202792	6825	verified_equal_answers
+strict_500	cp	unsupported_table_size	false			0						estimated_rows=4495280; max_table_rows=1000000
+strict_2000	direct	OPTIMAL	true	2	0	5	0.022548958	0.020391959	0.029098958	56466560	358075	verified_equal_answers
+strict_2000	prefix	OPTIMAL	true	2	0	5	0.000817375	0.000307334	0.0003165	577888	16325	verified_equal_answers
+strict_2000	nemo	OPTIMAL	true	2	0	5	0.000389959	0.000325125	0.00032975	579104	16323	verified_equal_answers
+strict_2000	cp	unsupported_table_size	false			0						estimated_rows=50433656; max_table_rows=1000000

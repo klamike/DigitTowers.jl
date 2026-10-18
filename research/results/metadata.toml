@@ -1,0 +1,12 @@
+complete_searches = 237
+completed_at_utc = "2026-10-18T12:50:36.402"
+covered_searches = 238
+julia_version = "1.12.3"
+max_digits = 100
+oracle = "Independent exact primitive-power enumeration and bounded exponentiation by squaring"
+partition_recovered_searches = 1
+per_optimize_time_limit_seconds = 10
+remaining_incomplete_searches = 0
+root_max_digits = 20
+searches = 238
+zero_to_zero = "forbid"

@@ -1,0 +1,10 @@
+[deps]
+DigitTowers = "71fc6dd7-a989-4a14-9c5a-7ed63056352e"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+
+[sources]
+DigitTowers = {path = ".."}
+
+[compat]
+Documenter = "1"
+julia = "1.12"

@@ -1,0 +1,10 @@
+scope	algorithm	max_digits	min_root	max_root	samples	minimum_seconds	median_seconds	minimum_allocated_bytes	solutions
+strict_2_to_20	cp	20	2	2	3	0.626637958	0.628217459	20413528	1
+strict_2_to_20	candidate_scan	20	2	2	3	0.000792042	0.000809334	1128272	1
+strict_2_to_20	derived_root	20	2	2	3	9.1625e-5	9.3208e-5	99712	1
+roots_1_to_9_lengths_2_to_20	cp	20	1	9	3	3.925314542	3.926414709	66391336	1
+roots_1_to_9_lengths_2_to_20	candidate_scan	20	1	9	3	0.001456417	0.00154025	2090080	1
+roots_1_to_9_lengths_2_to_20	derived_root	20	1	9	3	9.0833e-5	9.2666e-5	99712	1
+strict_2_to_100	candidate_scan	100	2	2	3	0.02087875	0.036182375	27841648	1
+strict_2_to_100	derived_root	100	2	2	3	0.000906084	0.000942667	1334352	1
+roots_1_to_1000_lengths_2_to_1000	derived_root	1000	1	1000	3	0.059617375	0.07623675	101193344	1

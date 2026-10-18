@@ -1,0 +1,4 @@
+family	ndigits	number	root	exponent	expression
+strict	6	262144	2	36	root_2((2^(6^(2^(1^(4^4)))))) = 262144
+zero_free	6	262144	2	36	root_2((2^(6^(2^(1^(4^4)))))) = 262144
+root_variations	6	262144	2	36	root_2((2^(6^(2^(1^(4^4)))))) = 262144

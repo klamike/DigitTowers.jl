@@ -1,0 +1,69 @@
+{
+  "max_digits": 10,
+  "max_outer_width": "unrestricted",
+  "min_root": 2,
+  "max_root": 9,
+  "candidate_bases_numbers": 58,
+  "partitions_checked": 1556,
+  "solutions": [
+    {
+      "number": "256",
+      "root": 7,
+      "required_exponent": 56,
+      "blocks": [
+        2,
+        56
+      ],
+      "widths": [
+        1,
+        2
+      ],
+      "concatenations": 1,
+      "grouped_blocks": 1
+    },
+    {
+      "number": "262144",
+      "root": 2,
+      "required_exponent": 36,
+      "blocks": [
+        2,
+        6,
+        2,
+        1,
+        4,
+        4
+      ],
+      "widths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "concatenations": 0,
+      "grouped_blocks": 0
+    },
+    {
+      "number": "262144",
+      "root": 2,
+      "required_exponent": 36,
+      "blocks": [
+        2,
+        6,
+        2,
+        1,
+        44
+      ],
+      "widths": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "concatenations": 1,
+      "grouped_blocks": 1
+    }
+  ]
+}
