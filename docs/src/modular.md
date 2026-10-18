@@ -4,10 +4,10 @@ Replace equality with agreement in the last ``L`` digits, and drop the outer
 root. For a fixed radix ``b`` define
 
 ```math
-F_{b,L}(N)=\operatorname{tower}(\operatorname{digits}_{b,L}(N))\bmod b^L.
+F_{b,L}(N)=\mathrm{tower}(\mathrm{digits}_{b,L}(N))\bmod b^L.
 ```
 
-Here ``\operatorname{digits}_{b,L}`` returns exactly ``L`` digits, padding with
+Here ``\mathrm{digits}_{b,L}`` returns exactly ``L`` digits, padding with
 leading zeros. This makes a finite map on ``0\le N<b^L``; with the default
 `0^0` rule, some evaluations are undefined. It turns the original puzzle into
 two new questions: which numbers reproduce their last digits, and which

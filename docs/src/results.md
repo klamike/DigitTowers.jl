@@ -57,7 +57,7 @@ For ``L\ge5``, the smallest possible suffix is the tower of ``L-1`` twos. At ``L
 
 ## Additional grouped examples
 
-Allowing the first two blocks to contain several digits produces two further examples found during these experiments. Every later block below is a single digit. Let ``\operatorname{tower}(s)`` mean the right-associated tower of the decimal digits in the string ``s``.
+Allowing the first two blocks to contain several digits produces two further examples found during these experiments. Every later block below is a single digit. Let ``\mathrm{tower}(s)`` mean the right-associated tower of the decimal digits in the string ``s``.
 
 | Base | Root order | Number | Digit count | First two blocks |
 |:--|:--|:--|:--|:--|
@@ -69,10 +69,10 @@ The full identities are
 ```math
 \begin{aligned}
 N_1&=268460636031393932323010374318061912785738337881638804914176,\\
-T_1&=\operatorname{tower}(\texttt{60636031393932323010374318061912785738337881638804914176})=1,\\
+T_1&=\mathrm{tower}(\texttt{60636031393932323010374318061912785738337881638804914176})=1,\\
 \sqrt{26^{84^{T_1}}}&=26^{42}=N_1;\\[6pt]
 N_2&=13696907849916094763278545543233536,\\
-T_2&=\operatorname{tower}(\texttt{907849916094763278545543233536})=1,\\
+T_2&=\mathrm{tower}(\texttt{907849916094763278545543233536})=1,\\
 \sqrt[6]{136^{96^{T_2}}}&=136^{16}=N_2.
 \end{aligned}
 ```

@@ -23,7 +23,7 @@ The last equality removes the outer root without introducing fractions.
 This is a feasibility problem. The implementation orders its solutions by
 increasing ``N``, then by root order.
 
-With `distinct_digits=true`, add ``\operatorname{AllDifferent}(d_1,\ldots,d_L)``.
+With `distinct_digits=true`, add ``\mathrm{AllDifferent}(d_1,\ldots,d_L)``.
 The JuMP model expresses this directly as an `MOI.AllDifferent` constraint.
 
 ## General expression grammar
@@ -215,7 +215,7 @@ an arbitrarily large exponent; the table handles both separately. An
 exponent of zero is likewise retained exactly. These facts prove
 
 ```math
-\widehat{\operatorname{pow}}(\sigma(a),\sigma(e))
+\widehat{\mathrm{pow}}(\sigma(a),\sigma(e))
 =\sigma(a^e)
 ```
 
