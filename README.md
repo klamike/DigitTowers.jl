@@ -33,22 +33,16 @@ modular_dynamics(3)                      # cycles of digit towers modulo 1000
 
 ## Things to explore
 
-- **Remove the root bound.** Exactly three decimal solutions through 1000
-  digits: `262144`, `4294967296`, and `3433683820292512484657849089281`.
-  The latter two need enormous roots, certified symbolically by a
-  [prime-valuation sieve](docs/src/spectrum.md).
-- **Repair a number cheaply.** `94143178827` works with a sixth root and just
-  two plus signs. [Dynamic programming](docs/src/synthesis.md) finds provably
-  cheapest expressions in a configurable grammar.
-- **Change the numeral system.** The zero-free base-22 numeral `F91A72A3`
-  equals its own tower, without a root. There are also
-  [infinite families and a radix/root dial](docs/src/radices.md).
-- **Iterate the puzzle.** Padded three-digit towers modulo 1000 have the cycle
-  `456 → 624 → 456`. [Exact modular evaluation](docs/src/modular.md) reveals
-  cycles and their basins without constructing the towers.
-- **Count before searching.** Defined towers form a
-  [two-state language](docs/src/language.md); only about 0.0102% of
-  1000-digit decimal numerals avoid an undefined nested `0^0`.
+| Question | A result |
+|:--|:--|
+| [Any integer root?](docs/src/spectrum.md) | Exactly `262144`, `2^32`, and `3^64` through 1000 decimal digits |
+| [Reorder the digits?](docs/src/anagrams.md) | `sqrt(4^6)=64`; four distinct-digit targets across every length for roots 2–9 |
+| [Cheapest expression?](docs/src/synthesis.md) | `94143178827` works with a sixth root and just two plus signs |
+| [All repair tradeoffs?](docs/src/pareto.md) | Pareto choices that every nonzero nonnegative weighted objective misses |
+| [Another numeral system?](docs/src/radices.md) | Base-22 `F91A72A3` equals its own tower; infinite families too |
+| [Almost a fixed point?](docs/src/nearby.md) | `971 → 969` uniquely minimizes three-digit circular distance modulo 1000 |
+| [Iterate the tower?](docs/src/modular.md) | `456 → 624 → 456`; [follow one orbit](docs/src/orbits.md) even in a domain of `2^1000` states |
+| [Count defined towers?](docs/src/language.md) | A two-state automaton counts them without enumerating digit strings |
 
 These results have explicit grammars and bounds. Research scripts and exact
 certificates reproduce them; [earlier results and proofs](docs/src/results.md)

@@ -1,0 +1,12 @@
+all_minima_exact = true
+definition = "F(N)=tower(width-padded radix digits of N) mod radix^width"
+domain = "all width-digit inputs with nonzero leading digit, selected digit rule, radix^width <= 100000"
+julia_version = "1.12.3"
+metrics = ["hamming", "circular"]
+radices = [2, 3, 5, 6, 8, 10, 12, 16]
+searches = 112
+sieve = "cached modulus radix^floor(width/2) supplies a distance lower bound; reject only above incumbent"
+widths = [2, 3, 4, 5]
+witness_limit_per_search = 32
+witnesses = 450
+zero_to_zero = "forbid"

@@ -35,13 +35,20 @@ stores an exact small root or a symbolic large-root witness; use
 
 [`synthesize`](@ref) finds minimum-cost expressions in a finite grammar and
 returns [`SynthesisCertificate`](@ref) witnesses accepted by `verify` and
-`expression`. [`radix_sweep`](@ref) searches other numeral systems and returns
+`expression`. [`synthesize_frontier`](@ref) retains every nondominated
+join/addition cost pair. [`anagram_towers`](@ref) permits reordering single
+digits and minimizes changed positions, returning [`AnagramCertificate`](@ref)
+witnesses for the original target integer.
+[`radix_sweep`](@ref) searches other numeral systems and returns
 [`RadixSolution`](@ref) objects with explicit integer-valued digits.
 
 [`tower_mod`](@ref) evaluates towers modulo an integer; [`modular_fixedpoints`](@ref)
 and [`modular_dynamics`](@ref) exhaust finite congruence puzzles and functional
 graphs. [`tower_isdefined`](@ref) recognizes the forbidden-`00` language, while
 [`tower_language_counts`](@ref) counts it by matrix exponentiation.
+[`modular_nearpoints`](@ref) exhausts minimum-distance variants with an exact
+residue bound. [`modular_orbit`](@ref) follows one starting word using Brent's
+algorithm, without enumerating the whole domain.
 
 ## Public docstrings
 

@@ -92,8 +92,12 @@ enumeration budget:
 |:--|:--|:--|
 | [`root_spectrum`](@ref) | Prime valuations turn divisibility by an enormous suffix into a tiny threshold | Every root order, including ones too large to materialize, over bounded numeral lengths |
 | [`synthesize`](@ref) | Merge suffix parses with the same capped value, retaining the cheapest | Minimum expression cost in its finite partition/operator grammar |
+| [`synthesize_frontier`](@ref) | Retain a Pareto antichain instead of scalarizing cost labels | Every nondominated join/addition tradeoff in that grammar |
+| [`anagram_towers`](@ref) | Merge permutations with the same remaining digit counts and capped suffix value | Minimum changed positions for every feasible root/base pair |
 | [`tower_mod`](@ref) | A totient chain with exact small/large flags | Exact residues, including noncoprime bases |
 | [`modular_dynamics`](@ref) | Exhaust the finite map once, then walk its functional graph | Every cycle and its full basin in the configured domain |
+| [`modular_nearpoints`](@ref) | Use low-digit congruences as admissible distance bounds | Exact closest points and tie counts, skipping many full evaluations |
+| [`modular_orbit`](@ref) | Brent cycle detection keeps only a constant number of orbit states | Least preperiod and period for one start, or an explicit evaluation limit |
 | [`tower_language_counts`](@ref) | Binary powers of a two-state transfer matrix | Exact defined/undefined word counts in logarithmically many matrix products |
 
 For example, the 1000-digit decimal root spectrum starts from only 1,702

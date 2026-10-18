@@ -11,6 +11,8 @@ export RadixSolution, radix_sweep, verify_radix, expression_radix
 export tower_mod, modular_fixedpoints, modular_dynamics
 export synthesize, SynthesisCertificate
 export root_spectrum, RootCertificate, verify_root_certificate
+export modular_orbit, modular_nearpoints
+export synthesize_frontier, anagram_towers, AnagramCertificate
 
 """
 A fixed expression grammar. By default: sqrt(d1^(d2^(...^dL))).
@@ -324,7 +326,11 @@ include("arithmetic.jl")
 include("sweep.jl")
 include("radix.jl")
 include("modular.jl")
+include("orbits.jl")
+include("nearby.jl")
 include("synthesis.jl")
+include("pareto.jl")
 include("spectrum.jl")
+include("anagrams.jl")
 
 end # module

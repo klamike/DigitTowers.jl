@@ -113,8 +113,12 @@ Several nearby questions lead to quite different exact algorithms:
 |:--|:--|:--|
 | Does *any* integer root work? | Prime valuations, with symbolic certificates for enormous roots | `root_spectrum(2:1000)` |
 | What is the cheapest repair of these digits? | Dynamic programming over equivalent suffix values | `synthesize(94143178827; roots=[6], max_block_width=1, allow_addition=true)` |
+| Which repairs trade joins for plus signs? | Pareto antichains of additive cost labels | `synthesize_frontier(2199023255552; roots=[6])` |
+| What if the digit order can change? | Digit-count states and minimum changed-position witnesses | `anagram_towers(64)` |
 | What changes in another numeral system? | Primitive-power enumeration in an arbitrary radix | `radix_sweep(22, 2:100; roots=[1])` |
 | What happens when we iterate towers modulo a power of ten? | Totient-chain evaluation and exhaustive functional graphs | `modular_dynamics(3)` |
+| How close can a tower get to its input? | Minimum distance with exact low-digit residue bounds | `modular_nearpoints(3; metric=:circular)` |
+| Can we follow an orbit without building the whole graph? | Brent cycle detection with a cached totient chain | `modular_orbit(426, 3)` |
 | How many towers are even defined? | A two-state automaton and exact matrix powers | `tower_language_counts(1000)` |
 
 The exploration chapters contain certificates, proofs, census tables, and

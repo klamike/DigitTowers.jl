@@ -1,0 +1,9 @@
+algorithm = "Brent cycle detection"
+cases = 127
+complete_cases = 126
+incomplete_cases = 1
+julia_version = "1.12.3"
+scope = "Selected single orbits; not an exhaustive census of all domain states"
+wide_domain = "2^1000 states"
+wide_evaluations = 7
+wide_start = "2^999"

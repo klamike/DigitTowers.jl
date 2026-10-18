@@ -1,11 +1,13 @@
 """
     SynthesisCertificate
 
-A minimum-cost expression for one fixed `(root, outer-base width)` in a
-[`synthesize`](@ref) call. `candidate` and `config` are ordinary DigitTowers
-objects, so the result can also be checked or searched with the existing
-backends. `cost` is the configured weighted sum of `concatenations` and
-`additions`; each deleted digit boundary counts as one concatenation.
+A certified expression returned by [`synthesize`](@ref) or
+[`synthesize_frontier`](@ref). `candidate` and `config` are ordinary
+DigitTowers objects, so the result can also be checked or searched with the
+existing backends. For scalar synthesis, `cost` is the configured weighted
+sum of `concatenations` and `additions`. For a Pareto frontier it is their
+unweighted sum; both coordinates determine membership. Each deleted digit
+boundary counts as one concatenation.
 """
 struct SynthesisCertificate
     candidate::Candidate
