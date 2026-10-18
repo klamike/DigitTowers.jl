@@ -17,6 +17,13 @@ makedocs(
         "Configuration" => "configuration.md",
         "Results" => "results.md",
         "Performance" => "performance.md",
+        "Explorations" => [
+            "Unbounded root orders" => "spectrum.md",
+            "The tower language" => "language.md",
+            "Other radices" => "radices.md",
+            "Expression synthesis" => "synthesis.md",
+            "Modular dynamics" => "modular.md",
+        ],
         "API" => "api.md",
     ],
 )

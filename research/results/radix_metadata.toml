@@ -1,0 +1,11 @@
+root_free_solutions = 7
+roots = "1:1000"
+candidates = 14284
+zero_to_zero = "forbid"
+radices = "3:64"
+lengths = "2:100"
+long_root_free_solutions = 3
+julia = "1.12.3"
+complete = true
+grammar = "single-digit right-associated powers; external root"
+solutions = 49

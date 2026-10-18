@@ -1,0 +1,8 @@
+candidates = 1702
+defined_candidates = 193
+longest_defined_candidate = 637
+max_digits = 1000
+radix = 10
+undefined_candidates = 1509
+word_count_method = "Exact two-state transfer matrix; binary exponentiation"
+zero_to_zero = "forbid"

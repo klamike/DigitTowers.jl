@@ -1,0 +1,738 @@
+definition = "F(N) = tower(width-padded base-radix digits of N) mod radix^width; all states 0 <= N < radix^width"
+
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 2
+states = 4
+undefined = 1
+undefined_basin = 4
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 3
+radix = 2
+states = 8
+undefined = 3
+undefined_basin = 8
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 4
+radix = 2
+states = 16
+undefined = 8
+undefined_basin = 16
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 3
+states = 9
+undefined = 1
+undefined_basin = 9
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 3
+radix = 3
+states = 27
+undefined = 5
+undefined_basin = 27
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 4
+radix = 3
+states = 81
+undefined = 21
+undefined_basin = 81
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 4
+states = 16
+undefined = 1
+undefined_basin = 16
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 3
+radix = 4
+states = 64
+undefined = 7
+undefined_basin = 64
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 4
+radix = 4
+states = 256
+undefined = 40
+undefined_basin = 256
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 5
+states = 25
+undefined = 1
+undefined_basin = 25
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 3
+radix = 5
+states = 125
+undefined = 9
+undefined_basin = 125
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 5
+states = 625
+undefined = 65
+undefined_basin = 624
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [366]
+    words = ["2431"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 6
+states = 36
+undefined = 1
+undefined_basin = 32
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 4
+    states = [16]
+    words = ["24"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 6
+states = 216
+undefined = 11
+undefined_basin = 210
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 6
+    states = [88]
+    words = ["224"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 4
+radix = 6
+states = 1296
+undefined = 96
+undefined_basin = 1296
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 8
+states = 64
+undefined = 1
+undefined_basin = 63
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [27]
+    words = ["33"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 3
+radix = 8
+states = 512
+undefined = 15
+undefined_basin = 512
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 8
+states = 4096
+undefined = 176
+undefined_basin = 4095
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [1787]
+    words = ["3373"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 10
+states = 100
+undefined = 1
+undefined_basin = 100
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 10
+states = 1000
+undefined = 19
+undefined_basin = 960
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 40
+    states = [456, 624]
+    words = ["456", "624"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 10
+states = 10000
+undefined = 280
+undefined_basin = 9844
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 156
+    states = [3456, 8481, 6256, 3936, 6483]
+    words = ["3456", "8481", "6256", "3936", "6483"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 12
+states = 144
+undefined = 1
+undefined_basin = 144
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 12
+states = 1728
+undefined = 23
+undefined_basin = 1491
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 237
+    states = [513]
+    words = ["369"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 12
+states = 20736
+undefined = 408
+undefined_basin = 17395
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 3341
+    states = [14336]
+    words = ["8368"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 2
+radix = 16
+states = 256
+undefined = 1
+undefined_basin = 256
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 16
+states = 4096
+undefined = 31
+undefined_basin = 4081
+zero_to_zero = "forbid"
+
+    [[graphs.cycles]]
+    basin_size = 15
+    states = [995, 2401, 3057]
+    words = ["3e3", "961", "bf1"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 4
+radix = 16
+states = 65536
+undefined = 736
+undefined_basin = 65536
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 2
+states = 4
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 4
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 2
+states = 8
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 3
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 5
+    states = [1]
+    words = ["001"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 2
+states = 16
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 16
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 3
+states = 9
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 9
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 3
+states = 27
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 8
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 19
+    states = [1]
+    words = ["001"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 3
+states = 81
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 81
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 4
+states = 16
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 16
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 4
+states = 64
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 19
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 45
+    states = [1]
+    words = ["001"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 4
+states = 256
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 256
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 5
+states = 25
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 25
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 5
+states = 125
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 33
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 92
+    states = [1]
+    words = ["001"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 5
+states = 625
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [366]
+    words = ["2431"]
+    [[graphs.cycles]]
+    basin_size = 624
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 6
+states = 36
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 4
+    states = [16]
+    words = ["24"]
+    [[graphs.cycles]]
+    basin_size = 32
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 6
+states = 216
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 60
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 150
+    states = [1]
+    words = ["001"]
+    [[graphs.cycles]]
+    basin_size = 6
+    states = [88]
+    words = ["224"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 6
+states = 1296
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 1296
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 8
+states = 64
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [27]
+    words = ["33"]
+    [[graphs.cycles]]
+    basin_size = 63
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 8
+states = 512
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 197
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 315
+    states = [1]
+    words = ["001"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 8
+states = 4096
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 1
+    states = [1787]
+    words = ["3373"]
+    [[graphs.cycles]]
+    basin_size = 4095
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 10
+states = 100
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 100
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 10
+states = 1000
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 195
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 765
+    states = [1]
+    words = ["001"]
+    [[graphs.cycles]]
+    basin_size = 40
+    states = [456, 624]
+    words = ["456", "624"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 10
+states = 10000
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 9843
+    states = [0, 1]
+    words = ["0000", "0001"]
+    [[graphs.cycles]]
+    basin_size = 157
+    states = [3456, 8481, 6256, 3936, 6483]
+    words = ["3456", "8481", "6256", "3936", "6483"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 12
+states = 144
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 144
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 12
+states = 1728
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 430
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 1061
+    states = [1]
+    words = ["001"]
+    [[graphs.cycles]]
+    basin_size = 237
+    states = [513]
+    words = ["369"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 12
+states = 20736
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 3351
+    states = [14336]
+    words = ["8368"]
+    [[graphs.cycles]]
+    basin_size = 17385
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+ndigits = 2
+radix = 16
+states = 256
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 256
+    states = [0, 1]
+    words = ["00", "01"]
+[[graphs]]
+complete = true
+ndigits = 3
+radix = 16
+states = 4096
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 2087
+    states = [0]
+    words = ["000"]
+    [[graphs.cycles]]
+    basin_size = 1994
+    states = [1]
+    words = ["001"]
+    [[graphs.cycles]]
+    basin_size = 15
+    states = [995, 2401, 3057]
+    words = ["3e3", "961", "bf1"]
+[[graphs]]
+complete = true
+ndigits = 4
+radix = 16
+states = 65536
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 65536
+    states = [0, 1]
+    words = ["0000", "0001"]
+[[graphs]]
+complete = true
+cycles = []
+ndigits = 5
+radix = 10
+states = 100000
+undefined = 3691
+undefined_basin = 100000
+zero_to_zero = "forbid"
+[[graphs]]
+complete = true
+ndigits = 5
+radix = 10
+states = 100000
+undefined = 0
+undefined_basin = 0
+zero_to_zero = "one"
+
+    [[graphs.cycles]]
+    basin_size = 27300
+    states = [0]
+    words = ["00000"]
+    [[graphs.cycles]]
+    basin_size = 72700
+    states = [1]
+    words = ["00001"]

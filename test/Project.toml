@@ -2,6 +2,7 @@
 DigitTowers = "71fc6dd7-a989-4a14-9c5a-7ed63056352e"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+Primes = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
 
 [sources]
 DigitTowers = {path = ".."}

@@ -35,6 +35,14 @@ julia --project=. -e 'using DigitTowers; r = sweep(2:1000; roots=1:1000); @asser
 
 The public tests assert both the exact solution set and the independently checked candidate count. The matching `lengths_2_to_1000_roots_1_to_1000` row in `benchmark/sweep_results.tsv` records the complete arithmetic run and its measured cost.
 
+The [unbounded-root sieve](spectrum.md) strengthens this substantially: across
+the same digit lengths, **only three numerals work for any positive integer
+root order at all**. Besides `262144`, they are `4294967296` and
+`3433683820292512484657849089281`; their root orders are certified symbolically
+and exceed 1000. The first of these extra examples has neither zero nor one.
+This changes the root grammar, so it is compatible with the square-root
+impossibility result below.
+
 ## Two global impossibility results
 
 In the **single-digit square-root grammar**, there is **no multidigit solution with all digits distinct**. The complete search excludes lengths 2–10. A longer decimal number necessarily repeats a digit, by the pigeonhole principle.

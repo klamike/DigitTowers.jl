@@ -27,6 +27,22 @@ Keep the configuration with each answer: it supplies the root-prefix width,
 block widths, operators, and zero convention needed by [`verify`](@ref) and
 [`expression`](@ref).
 
+## Explorations
+
+`root_spectrum` removes the root-order bound entirely. Its `RootCertificate`
+stores an exact small root or a symbolic large-root witness; use
+`verify_root_certificate` (or `verify`) to check it independently.
+
+[`synthesize`](@ref) finds minimum-cost expressions in a finite grammar and
+returns [`SynthesisCertificate`](@ref) witnesses accepted by `verify` and
+`expression`. [`radix_sweep`](@ref) searches other numeral systems and returns
+[`RadixSolution`](@ref) objects with explicit integer-valued digits.
+
+[`tower_mod`](@ref) evaluates towers modulo an integer; [`modular_fixedpoints`](@ref)
+and [`modular_dynamics`](@ref) exhaust finite congruence puzzles and functional
+graphs. [`tower_isdefined`](@ref) recognizes the forbidden-`00` language, while
+[`tower_language_counts`](@ref) counts it by matrix exponentiation.
+
 ## Public docstrings
 
 ```@autodocs

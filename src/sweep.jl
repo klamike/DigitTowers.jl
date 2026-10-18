@@ -84,6 +84,8 @@ function sweep(lengths::AbstractUnitRange{Int}; roots=[2],
                 bound = Int(bound_big)
                 largest_bound = max(largest_bound, bound)
                 S = max(2, bound + 1)
+                zero_to_zero == :forbid &&
+                    !tower_isdefined(@view(ds[base_position:end])) && continue
                 blocks = BigInt.(ds[base_position:end])
                 ops = fill(:^, length(blocks) - 1)
                 value = capped_suffix(blocks, ops, S, zero_to_zero)

@@ -105,6 +105,21 @@ Read [Formulation](@ref) for the prefix algorithm, constraints, and completeness
 [Configuration](@ref) for the expression grammar, [Results](@ref) for the
 bounded searches, and [API](@ref) for the Julia interface.
 
+## Beyond the original puzzle
+
+Several nearby questions lead to quite different exact algorithms:
+
+| Question | Technique | Try |
+|:--|:--|:--|
+| Does *any* integer root work? | Prime valuations, with symbolic certificates for enormous roots | `root_spectrum(2:1000)` |
+| What is the cheapest repair of these digits? | Dynamic programming over equivalent suffix values | `synthesize(94143178827; roots=[6], max_block_width=1, allow_addition=true)` |
+| What changes in another numeral system? | Primitive-power enumeration in an arbitrary radix | `radix_sweep(22, 2:100; roots=[1])` |
+| What happens when we iterate towers modulo a power of ten? | Totient-chain evaluation and exhaustive functional graphs | `modular_dynamics(3)` |
+| How many towers are even defined? | A two-state automaton and exact matrix powers | `tower_language_counts(1000)` |
+
+The exploration chapters contain certificates, proofs, census tables, and
+commands to reproduce each result. Run `examples/playground.jl` for a short tour.
+
 ## Build these docs
 
 ```sh

@@ -177,3 +177,10 @@ end
 include("backends.jl")
 
 include("sweep.jl")
+
+include("language.jl")
+include("radix.jl")
+include("modular.jl")
+
+include("synthesis.jl")
+include("spectrum.jl")

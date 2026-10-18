@@ -45,6 +45,9 @@ For long arithmetic cases, the script estimates CP transition-table rows before 
 
 Raw measurements are in `benchmark/results.tsv`, range comparisons in `benchmark/sweep_results.tsv`, and environment details in `benchmark/metadata.toml`. The earlier research prototype and its independent oracle remain under `research/` for reproducibility.
 
+These timings record baseline commit `43a49c3`. The exploration methods below
+were added subsequently and are not included in these benchmark tables.
+
 ## Measured fixed-length searches
 
 The recorded run used Julia 1.12.3 on `apple-m4`, one Julia thread, BenchmarkTools 1.8.0, and Nemo 0.57.1. Values below are warmed median milliseconds. All measured methods completed and returned identical solution sets.
@@ -79,6 +82,27 @@ not a claim about all grammars or CP implementations.
 
 `sweep` searches the whole range before sorting and truncating its output.
 Its `max_solutions` option limits returned results, rather than computation.
+
+## Search by changing the question
+
+The explorations use different mathematical structure rather than a larger
+enumeration budget:
+
+| Method | Reduction | What it certifies |
+|:--|:--|:--|
+| [`root_spectrum`](@ref) | Prime valuations turn divisibility by an enormous suffix into a tiny threshold | Every root order, including ones too large to materialize, over bounded numeral lengths |
+| [`synthesize`](@ref) | Merge suffix parses with the same capped value, retaining the cheapest | Minimum expression cost in its finite partition/operator grammar |
+| [`tower_mod`](@ref) | A totient chain with exact small/large flags | Exact residues, including noncoprime bases |
+| [`modular_dynamics`](@ref) | Exhaust the finite map once, then walk its functional graph | Every cycle and its full basin in the configured domain |
+| [`tower_language_counts`](@ref) | Binary powers of a two-state transfer matrix | Exact defined/undefined word counts in logarithmically many matrix products |
+
+For example, the 1000-digit decimal root spectrum starts from only 1,702
+primitive-power numerals. The forbidden-`00` language rejects 1,509 immediately;
+193 are defined, and the valuation test leaves three solutions. This removes
+the need to search over root orders at all. The synthesis census likewise
+reuses 57,063 value states instead of enumerating every partition of every
+candidate. These counts describe the saved experiments; they are not timing
+comparisons with the earlier fixed-grammar benchmarks.
 
 ## Julia package assessment
 

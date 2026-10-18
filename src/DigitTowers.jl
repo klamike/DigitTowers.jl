@@ -6,6 +6,11 @@ import Primes
 const MOI = JuMP.MOI
 
 export Config, Candidate, build_model, search, sweep, verify, expression
+export tower_isdefined, tower_language_counts
+export RadixSolution, radix_sweep, verify_radix, expression_radix
+export tower_mod, modular_fixedpoints, modular_dynamics
+export synthesize, SynthesisCertificate
+export root_spectrum, RootCertificate, verify_root_certificate
 
 """
 A fixed expression grammar. By default: sqrt(d1^(d2^(...^dL))).
@@ -314,7 +319,12 @@ end
 function nemo_prefix_candidates end
 
 include("prefix.jl")
+include("language.jl")
 include("arithmetic.jl")
 include("sweep.jl")
+include("radix.jl")
+include("modular.jl")
+include("synthesis.jl")
+include("spectrum.jl")
 
 end # module
