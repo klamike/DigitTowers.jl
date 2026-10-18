@@ -10,7 +10,7 @@ makedocs(
     checkdocs = :all,
     doctest = true,
     remotes = nothing,
-    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "true", edit_link=nothing, repolink=nothing),
+    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "true", edit_link=nothing),
     pages = [
         "Overview" => "index.md",
         "Formulation" => "formulation.md",
