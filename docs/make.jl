@@ -31,3 +31,6 @@ makedocs(
         "API" => "api.md",
     ],
 )
+deploydocs(
+    repo = "github.com/klamike/DigitTowers.jl.git",
+)
